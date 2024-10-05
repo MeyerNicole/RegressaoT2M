@@ -1,0 +1,44 @@
+---
+output: github_document
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# Pacote de Regressão Linear
+Este pacote foi desenvolvido para fornecer ferramentas simples e eficientes para ajuste de modelos de regressão linear, bem como para gerar predições a partir desses modelos.
+
+# Instalação
+Você pode instalar diretamente a partir do GitHub usando:
+```{r eval=FALSE}
+# rode install.packages("devtools") primeiro se você não tiver o pacote devtools instalado.
+devtools::install_github("MeyerNicole/RegressaoT2M")
+```
+# Exemplo de Uso
+Aqui está um exemplo básico que mostra como ajustar um modelo de regressão linear com dados simulados e como fazer predições.
+```{r}
+# Carregando o pacote 
+library(Regressao)
+
+# Gerando um conjunto de dados de exemplo
+set.seed(123)
+x1 <- rnorm(100)
+x2 <- rnorm(100)
+y <- 3 * x1 + 2 * x2 + rnorm(100)
+
+# Ajustando o modelo de regressão linear
+modelo <- regressao_linear(matrix(c(x1,x2), nrow = 100, ncol = 2), y)
+
+# Gerando predições com novos dados
+novos_preditores <- matrix(c(1, 5, 2, 6, 3, 7), nrow = 3, byrow = TRUE)
+predizer_novos_valores(novos_preditores, modelo)
+```
+
+#Licença
+Este pacote está disponível sob a licença GPL (>=3)

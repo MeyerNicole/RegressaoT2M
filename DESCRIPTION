@@ -1,0 +1,18 @@
+Package: Regressao
+Title: Ajuste de Modelos de Regressão
+Version: 0.1.1
+Authors@R: 
+    person("Ian, Isabela, Nicole e Tamires", "de ME918", , "n204360@dac.unicamp.br", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: O pacote fornece funções para ajuste e análise de modelos de regressão linear. 
+    O usuário pode calcular coeficientes, resíduos, valores preditos e realizar predições para novos dados.
+License: GPL (>= 3)
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Depends: 
+    R (>= 2.10)
+LazyData: true
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3

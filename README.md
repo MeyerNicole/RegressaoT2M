@@ -11,7 +11,7 @@ Você pode instalar diretamente a partir do GitHub usando:
 
 ``` r
 # rode install.packages("devtools") primeiro se você não tiver o pacote devtools instalado.
-devtools::install_github("https://github.com/MeyerNicole/RegressaoT2M")
+devtools::install_github("MeyerNicole/RegressaoT2M")
 ```
 
 # Exemplo de Uso
